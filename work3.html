@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Walkabout</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+nav{
+    width:100%;
+    padding:30px 60px;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.3);
+    z-index:100;
+}
+
+.logo{
+    font-size:1rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.back-btn{
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,0.4);
+    padding:12px 25px;
+    transition:0.4s;
+}
+
+.back-btn:hover{
+    background:white;
+    color:black;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+
+.hero h1{
+    font-size:7rem;
+    letter-spacing:12px;
+    font-weight:200;
+}
+
+.hero p{
+    margin-top:20px;
+    color:#999;
+    max-width:700px;
+    line-height:1.8;
+}
+
+/* glowing background */
+
+.glow{
+    position:absolute;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    background:#ffffff10;
+    filter:blur(80px);
+    animation:float 8s infinite ease-in-out;
+}
+
+.glow2{
+    width:250px;
+    height:250px;
+    top:10%;
+    left:10%;
+    background:#6f00ff30;
+}
+
+.glow3{
+    width:300px;
+    height:300px;
+    bottom:10%;
+    right:10%;
+    background:#00e1ff20;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-40px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* ---------------- IMAGE GALLERY ---------------- */
+
+.gallery{
+    width:90%;
+    margin:auto;
+    padding:100px 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:30px;
+}
+
+.gallery img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.5s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* ---------------- EVALUATION ---------------- */
+
+.evaluation{
+    width:80%;
+    margin:auto;
+    padding-bottom:120px;
+}
+
+.evaluation h2{
+    font-size:3rem;
+    margin-bottom:40px;
+    letter-spacing:6px;
+    font-weight:200;
+}
+
+.evaluation p{
+    color:#bbb;
+    line-height:2;
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+/* ---------------- WEBSITE LINK ---------------- */
+
+.website-link{
+    width:80%;
+    margin:auto;
+    padding-bottom:120px;
+}
+
+.website-link a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    border:1px solid rgba(255,255,255,0.4);
+    padding:18px 40px;
+    letter-spacing:3px;
+    transition:0.4s;
+}
+
+.website-link a:hover{
+    background:white;
+    color:black;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:900px){
+
+    nav{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .evaluation{
+        width:90%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+    <div class="logo">
+        Aly's Collection
+    </div>
+
+    <a href="index.html" class="back-btn">
+        BACK
+    </a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="glow glow2"></div>
+    <div class="glow glow3"></div>
+
+    <h1>Walkabout</h1>
+
+    <p>
+        A creative website exploring accessibility, sensory awareness and digital storytelling through interactive design.
+
+    </p>
+
+</section>
+
+<!-- IMAGE GALLERY -->
+
+<section class="gallery">
+
+    <img src="first.jpg" alt="Project Image">
+
+    <img src="disc4.jpg" alt="Project Image">
+
+    <img src="disc9.jpg" alt="Project Image">
+
+</section>
+
+<!-- EVALUATION -->
+
+<section class="evaluation">
+
+    <h2>Neurodivergent Navigation</h2>
+
+    <p>
+        To create this website I used HTML visual coding to design a platform that is neurodivergent friendly and accessible to a wide range of users. I combined illustration with photography through layered overlays to create hidden locations within the site, inspired by the structure of video games where areas, clues, or objects are gradually revealed as the player progresses. This interactive approach encourages exploration while also creating a sense of discovery and curiosity for the user.
+    </p>
+
+    <p>
+        I later experimented with colour filters by applying selected tones over the images. Some filters are very subtle, using only small hints of saturation, while others are much bolder and more expressive. This variation was intentional, as colour can strongly affect atmosphere and emotional response. The changing intensity of the colours also reflects the idea that sensory experiences differ from person to person, especially for neurodivergent individuals.
+
+    </p>
+
+    <p>
+        The overall website design remains mostly black with white text. I chose this because many neurodivergent users (including myself) often prefer darker interfaces, as they can reduce visual overstimulation and eye strain. Keeping the layout simple and uncluttered was an important design decision. I avoided large blocks of text and instead used short, factual writing to make the content easier to process and less overwhelming to read.
+    </p>
+
+    <p>
+        Another important feature was the inclusion of sensory information for each location, such as descriptions of sounds, smells and atmosphere. This allows users to know what to expect before engaging with a space, helping reduce anxiety linked to unpredictability or sensory overload. Some neurodivergent people find unexpected sensory experiences uncomfortable, so providing this information creates a more inclusive and supportive experience. I also designed the site to allow users to scroll through the content at their own pace, giving them more control over how they interact with the website.
+    </p>
+
+    <p>
+        During this project helped me explore how digital design can become more empathetic and accessible. Rather than focusing only on aesthetics, I considered how colour, layout, interaction, and sensory awareness could shape the emotional comfort of the user. The website combines an element of gaming, storytelling and accessibility to create an experience that feels both immersive and considerate of neurodivergent needs.
+    </p>
+
+</section>
+
+<!-- WEBSITE LINK -->
+
+<section class="website-link">
+
+    <a href="https://alyholland94.github.io/walkabout/" target="_blank">
+        VIEW WEBSITE
+    </a>
+
+</section>
+
+</body>
+</html>

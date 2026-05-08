@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Self Directed</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:black;
+    color:white;
+    overflow-x:hidden;
+}
+
+/* ---------------- NAVIGATION ---------------- */
+
+nav{
+    width:100%;
+    padding:30px 60px;
+    position:fixed;
+    top:0;
+    left:0;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    backdrop-filter:blur(10px);
+    background:rgba(0,0,0,0.3);
+    z-index:100;
+}
+
+.logo{
+    font-size:1rem;
+    letter-spacing:4px;
+    text-transform:uppercase;
+}
+
+.back-btn{
+    color:white;
+    text-decoration:none;
+    border:1px solid rgba(255,255,255,0.4);
+    padding:12px 25px;
+    transition:0.4s;
+}
+
+.back-btn:hover{
+    background:white;
+    color:black;
+}
+
+/* ---------------- HERO SECTION ---------------- */
+
+.hero{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    text-align:center;
+    position:relative;
+}
+
+.hero h1{
+    font-size:7rem;
+    letter-spacing:12px;
+    font-weight:200;
+}
+
+.hero p{
+    margin-top:20px;
+    color:#999;
+    max-width:700px;
+    line-height:1.8;
+}
+
+/* glowing background */
+
+.glow{
+    position:absolute;
+    width:400px;
+    height:400px;
+    border-radius:50%;
+    background:#ffffff10;
+    filter:blur(80px);
+    animation:float 8s infinite ease-in-out;
+}
+
+.glow2{
+    width:250px;
+    height:250px;
+    top:10%;
+    left:10%;
+    background:#6f00ff30;
+}
+
+.glow3{
+    width:300px;
+    height:300px;
+    bottom:10%;
+    right:10%;
+    background:#00e1ff20;
+}
+
+@keyframes float{
+    0%{
+        transform:translateY(0px);
+    }
+    50%{
+        transform:translateY(-40px);
+    }
+    100%{
+        transform:translateY(0px);
+    }
+}
+
+/* ---------------- IMAGE GALLERY ---------------- */
+
+.gallery{
+    width:90%;
+    margin:auto;
+    padding:100px 0;
+    display:grid;
+    grid-template-columns:repeat(auto-fit, minmax(300px,1fr));
+    gap:30px;
+}
+
+.gallery img{
+    width:100%;
+    height:400px;
+    object-fit:cover;
+    border-radius:20px;
+    transition:0.5s;
+    border:1px solid rgba(255,255,255,0.1);
+}
+
+.gallery img:hover{
+    transform:scale(1.03);
+}
+
+/* ---------------- EVALUATION ---------------- */
+
+.evaluation{
+    width:80%;
+    margin:auto;
+    padding-bottom:120px;
+}
+
+.evaluation h2{
+    font-size:3rem;
+    margin-bottom:40px;
+    letter-spacing:6px;
+    font-weight:200;
+}
+
+.evaluation p{
+    color:#bbb;
+    line-height:2;
+    font-size:1.1rem;
+    margin-bottom:25px;
+}
+
+/* ---------------- WEBSITE LINK ---------------- */
+
+.website-link{
+    width:80%;
+    margin:auto;
+    padding-bottom:120px;
+}
+
+.website-link a{
+    display:inline-block;
+    text-decoration:none;
+    color:white;
+    border:1px solid rgba(255,255,255,0.4);
+    padding:18px 40px;
+    letter-spacing:3px;
+    transition:0.4s;
+}
+
+.website-link a:hover{
+    background:white;
+    color:black;
+}
+
+/* ---------------- MOBILE ---------------- */
+
+@media(max-width:900px){
+
+    nav{
+        padding:20px;
+    }
+
+    .hero h1{
+        font-size:3rem;
+    }
+
+    .evaluation{
+        width:90%;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+
+<nav>
+
+    <div class="logo">
+        Aly's Collection
+    </div>
+
+    <a href="index.html" class="back-btn">
+        BACK
+    </a>
+
+</nav>
+
+<!-- HERO -->
+
+<section class="hero">
+
+    <div class="glow glow2"></div>
+    <div class="glow glow3"></div>
+
+    <h1>Self Directed</h1>
+
+    <p>
+        Using sound and interactive media to visualise emotion, tension, and psychological space.
+
+    </p>
+
+</section>
+
+<!-- IMAGE GALLERY -->
+
+<section class="gallery">
+
+    <img src="N1.jpg" alt="Project Image">
+
+    <img src="n2.jpg" alt="Project Image">
+
+    <img src="n3.jpg" alt="Project Image">
+
+</section>
+
+<!-- EVALUATION -->
+
+<section class="evaluation">
+
+    <h2>No Escape</h2>
+
+    <p>
+        I continued developing my interest in coding and the visual representation of mental health. After producing my HTML based game, I converted the gameplay into a video format to explore how meaning shifts when interaction is removed and the experience becomes observational rather than participatory. This allowed me to focus more closely on atmosphere, pacing and emotional impact.
+    </p>
+
+    <p>
+        Within the video the red dots act as a visual representation of intrusive thoughts or “voices” within the experience. Rather than remaining static, they gradually accumulate over time, increasing in density and intensity as the piece progresses. This gradual build up was intentional, reflecting how mental noise and anxiety often begin subtly before escalating into something overwhelming and difficult to ignore. As the dots multiply the screen becomes increasingly crowded, creating a sense of pressure, distraction and cognitive overload. This progression mirrors how intrusive thoughts can intensify in real life, where repetition and persistence make them feel unavoidable and inescapable.
+
+    </p>
+
+    <p>
+        I then developed the audio using Adobe Audition, layering multiple voice recordings and applying echo and reverb effects to construct a dense, distorted soundscape. These overlapping voices were designed to reinforce the visual system, translating internal thought patterns into both sound and image. The echo effect creates a sense of distance and repetition, while also amplifying psychological tension, making the voices feel both present and disorienting.
+    </p>
+
+    <p>
+        This work connects closely to my wider interest in visually expressing mental health through sensory experience. I enjoy translating emotional states into visual and auditory systems, particularly feelings that are difficult to describe verbally, such as anxiety, overwhelm and internal conflict. By combining structured visuals with manipulated sound, I aimed to create an immersive experience where emotion is not explained, but felt.
+    </p>
+
+    <p>
+        Through this project, I developed a stronger understanding of how time based media can be used to communicate psychological states. It reinforced my interest in creating work that sits between game, film, and sound design, where meaning is constructed through layered sensory experiences rather than direct narrative.
+    </p>
+
+</section>
+
+<!-- WEBSITE LINK -->
+
+<section class="website-link">
+
+    <a href="https://youtu.be/SaojB-2KZ6w" target="_blank">
+        VIEW VIDEO
+    </a>
+
+</section>
+
+</body>
+</html>
