@@ -74,11 +74,13 @@ nav{
     font-weight:200;
 }
 
+/* ✅ BIGGER DESKTOP PARAGRAPH */
 .hero p{
     margin-top:20px;
     color:#999;
     max-width:700px;
     line-height:1.8;
+    font-size:1.35rem;   /* <-- increased for desktop */
 }
 
 /* glowing background */
@@ -110,15 +112,9 @@ nav{
 }
 
 @keyframes float{
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform:translateY(-40px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
+    0%{ transform:translateY(0px); }
+    50%{ transform:translateY(-40px); }
+    100%{ transform:translateY(0px); }
 }
 
 /* ---------------- IMAGE GALLERY ---------------- */
@@ -206,6 +202,10 @@ nav{
         width:90%;
     }
 
+    /* ✅ MOBILE TEXT STAYS SAME (no change) */
+    .hero p{
+        font-size:1.1rem;
+    }
 }
 
 </style>
@@ -213,21 +213,10 @@ nav{
 
 <body>
 
-<!-- NAV -->
-
 <nav>
-
-    <div class="logo">
-        Aly's Collection
-    </div>
-
-    <a href="index.html" class="back-btn">
-        BACK
-    </a>
-
+    <div class="logo">Aly's Collection</div>
+    <a href="index.html" class="back-btn">BACK</a>
 </nav>
-
-<!-- HERO -->
 
 <section class="hero">
 
@@ -238,60 +227,28 @@ nav{
 
     <p>
         A creative project exploring mental health, neurodivergence through interaction, repetition and experimental game design.
-
     </p>
 
 </section>
 
-<!-- IMAGE GALLERY -->
-
 <section class="gallery">
-
-    <img src="1.jpg" alt="Project Image">
-
-    <img src="2.jpg" alt="Project Image">
-
-    <img src="3.jpg" alt="Project Image">
-
+    <img src="1.jpg">
+    <img src="2.jpg">
+    <img src="3.jpg">
 </section>
-
-<!-- EVALUATION -->
 
 <section class="evaluation">
 
     <h2>Avoid Thoughts</h2>
 
-    <p>
-        I used HTML coding to create an interactive game inspired by my essay exploring how online games can support neurodivergent individuals through structure, repetition and controlled interaction. While my research focused on online gaming environments, I chose to reinterpret Pac-Man because of its instantly recognisable mechanics and repetitive maze system. This allowed me to translate theoretical research into a playable experience, communicating mental health struggles through interaction and atmosphere rather than direct explanation.
-    </p>
-
-    <p>
-        This explores the relationship between external structure and internal emotional instability. Pac-Man’s maze originally functions through strict rules, predictable routes and controlled movement, qualities that can feel comforting and grounding for neurodivergent players who may rely on routine and repetition for regulation. I wanted to challenge this sense of safety by transforming the ghosts into “dark thoughts.” Unlike the original game these figures move through walls freely, reflecting the intrusive and unavoidable nature of anxiety and negative thinking. Although the maze remains structured and familiar, the threats ignore its boundaries, symbolising how mental struggles can disrupt even environments designed to feel safe and controlled.
-    </p>
-
-    <p>
-        I drew inspiration from the terminal interfaces in Fallout, using a monochromatic green colour palette reminiscent of early computer systems. The restricted palette reduces visual noise and sensory overload while also creating a nostalgic, immersive atmosphere. This design decision connects directly to research discussed in my essay surrounding neurodivergent accessibility and the importance of calm, focused visual environments. The retro interface also reinforces themes of familiarity and escapism, suggesting digital spaces as places of comfort and emotional processing.
-    </p>
-
-    <p>
-        I experimented with maze scales, movement speeds and screen sizes to examine how interaction design can influence emotional response. Smaller mazes created feelings of comfort and security, whereas larger empty spaces introduced isolation, vulnerability and tension. These experiments helped demonstrate how subtle technical adjustments can significantly alter psychological experience, mirroring how small disruptions to routine can impact mental wellbeing.
-
-    </p>
-
-    <p>
-        This project ultimately became both a game and a visual metaphor for mental health. Rather than presenting neurodivergence or anxiety through explanation alone, the work encourages players to experience these emotions through movement, repetition, restriction and disruption. While the “dark thoughts” cannot be fully contained, the act of continuing to move, navigate and collect light becomes symbolic of persistence, regulation and reclaiming control within overwhelming mental spaces.
-    </p>
+   <p> I used HTML coding to create an interactive game inspired by my essay exploring how online games can support neurodivergent individuals through structure, repetition and controlled interaction. While my research focused on online gaming environments, I chose to reinterpret Pac-Man because of its instantly recognisable mechanics and repetitive maze system. This allowed me to translate theoretical research into a playable experience, communicating mental health struggles through interaction and atmosphere rather than direct explanation. </p> <p> This explores the relationship between external structure and internal emotional instability. Pac-Man’s maze originally functions through strict rules, predictable routes and controlled movement, qualities that can feel comforting and grounding for neurodivergent players who may rely on routine and repetition for regulation. I wanted to challenge this sense of safety by transforming the ghosts into “dark thoughts.” Unlike the original game these figures move through walls freely, reflecting the intrusive and unavoidable nature of anxiety and negative thinking. Although the maze remains structured and familiar, the threats ignore its boundaries, symbolising how mental struggles can disrupt even environments designed to feel safe and controlled. </p> <p> I drew inspiration from the terminal interfaces in Fallout, using a monochromatic green colour palette reminiscent of early computer systems. The restricted palette reduces visual noise and sensory overload while also creating a nostalgic, immersive atmosphere. This design decision connects directly to research discussed in my essay surrounding neurodivergent accessibility and the importance of calm, focused visual environments. The retro interface also reinforces themes of familiarity and escapism, suggesting digital spaces as places of comfort and emotional processing. </p> <p> I experimented with maze scales, movement speeds and screen sizes to examine how interaction design can influence emotional response. Smaller mazes created feelings of comfort and security, whereas larger empty spaces introduced isolation, vulnerability and tension. These experiments helped demonstrate how subtle technical adjustments can significantly alter psychological experience, mirroring how small disruptions to routine can impact mental wellbeing. </p> <p> This project ultimately became both a game and a visual metaphor for mental health. Rather than presenting neurodivergence or anxiety through explanation alone, the work encourages players to experience these emotions through movement, repetition, restriction and disruption. While the “dark thoughts” cannot be fully contained, the act of continuing to move, navigate and collect light becomes symbolic of persistence, regulation and reclaiming control within overwhelming mental spaces. </p> </section>
 
 </section>
 
-<!-- WEBSITE LINK -->
-
 <section class="website-link">
-
     <a href="https://alyholland94.github.io/Webgame/" target="_blank">
         VIEW WEBSITE
     </a>
-
 </section>
 
 </body>
