@@ -26,7 +26,7 @@ body{
 nav{
     width:100%;
     padding:30px 60px;
-    position:fixed;
+    position:fixed; 
     top:0;
     left:0;
     display:flex;
@@ -69,7 +69,7 @@ nav{
 }
 
 .hero h1{
-    font-size:7rem;
+    font-size:8.5rem;
     letter-spacing:12px;
     font-weight:200;
 }
@@ -79,6 +79,9 @@ nav{
     color:#999;
     max-width:700px;
     line-height:1.8;
+
+    /* ✅ ONLY CHANGE: bigger desktop text */
+    font-size:1.6rem;
 }
 
 /* glowing background */
@@ -110,15 +113,9 @@ nav{
 }
 
 @keyframes float{
-    0%{
-        transform:translateY(0px);
-    }
-    50%{
-        transform:translateY(-40px);
-    }
-    100%{
-        transform:translateY(0px);
-    }
+    0%{transform:translateY(0px);}
+    50%{transform:translateY(-40px);}
+    100%{transform:translateY(0px);}
 }
 
 /* ---------------- IMAGE GALLERY ---------------- */
@@ -206,6 +203,10 @@ nav{
         width:90%;
     }
 
+    /* ✅ MOBILE FIX: keep original smaller text */
+    .hero p{
+        font-size:1.1rem;
+    }
 }
 
 </style>
@@ -216,7 +217,6 @@ nav{
 <!-- NAV -->
 
 <nav>
-
     <div class="logo">
         Aly's Collection
     </div>
@@ -224,7 +224,6 @@ nav{
     <a href="index.html" class="back-btn">
         BACK
     </a>
-
 </nav>
 
 <!-- HERO -->
@@ -238,7 +237,6 @@ nav{
 
     <p>
         Exploring gaming technology as a tool for connection and a shared experience.
-
     </p>
 
 </section>
@@ -248,9 +246,7 @@ nav{
 <section class="gallery">
 
     <img src="p1.jpg" alt="Project Image">
-
     <img src="p2.jpg" alt="Project Image">
-
     <img src="p3.jpg" alt="Project Image">
 
 </section>
@@ -266,24 +262,18 @@ nav{
     </p>
 
     <p>
-        My chosen object for the project was my Pokémon GO Plus catcher, a device linked to the mobile game Pokémon GO. I selected this object because it represents more than simply gameplay, it reflects movement, routine, community interaction and shared experiences between players. The game itself encourages users to explore public spaces and interact with others during events, making it an interesting object to position within a museum context focused on social behaviour and technology.
-    </p>
-
-    <p>
-        To support this idea, I designed a flyer advertising a community meet up day in the park. The purpose of this was to encourage people to interact socially rather than isolate themselves while gaming. I intentionally kept the flyer visually connected to Pokémon branding through bright colours, familiar imagery and playful design choices to make it feel recognisable and inviting to fans of the game.
-    </p>
-
-    <p>
-        I also created a series of social media posts to promote the event. The first post used a dark background with the phrase “Sometimes playing alone feels lonely too,” highlighting the emotional side of gaming and isolation. The second post introduced a more positive and energetic tone using a bright yellow background alongside the phrases “Walk together, catch together, raid together,” presenting community as a solution to loneliness. The final post clearly communicated the event details, including the meet up day, time and location.
-
-    </p>
-
-    <p>
-        I designed a museum style label for the Pokémon GO Plus catcher. The label included factual information such as its release date, materials and function, alongside a description explaining how the device encourages players to connect with others through shared activities and public events. By presenting the object in this format, I wanted to explore how gaming technology can be viewed not only as entertainment but also as a tool for social interaction, accessibility and community building.
+        My chosen object for the project was my Pokémon GO Plus catcher, a device linked to the mobile game Pokémon GO. I selected this object because it represents more than simply gameplay, it reflects movement, routine, community interaction and shared experiences between players. I wanted the website to remain neurodivergent friendly, so I focused on creating a simple layout and accessible navigation. 
     </p>
 
 </section>
 
+<!-- WEBSITE LINK -->
+
+<section class="website-link">
+
+    <a href="https://alyholland94.github.io/-museumofhope/" target="_blank">
+        VIEW WEBSITE
+    </a>
 
 </section>
 
